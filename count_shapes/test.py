@@ -8,9 +8,12 @@ test_targets = (
     count_shapes_golf,
     count_shapes_recurse,
     count_shapes_exe.CountShapesExe("./count_shapes_set.exe"),
-    count_shapes_exe.CountShapesExe("./count_shapes_lambda.exe"))
+    count_shapes_exe.CountShapesExe("./count_shapes_lambda.exe"),
+    count_shapes_exe.CountShapesExe("./count_shapes.p6"))
 
 tests = [
+    [ 'empty grid', 0, list('.') ],
+
     [ 'single cell grid', 1, list('X') ],
 
     [ 'single point', 1, list('.X.') ],
